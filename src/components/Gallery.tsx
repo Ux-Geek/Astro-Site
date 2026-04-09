@@ -3,10 +3,10 @@ import { FadeIn } from "./FadeIn";
 export const Gallery = () => {
   const images = [
     "/images/workshop-1.jpg",
-    "https://images.unsplash.com/photo-1542435503-956c469947f6?auto=format&fit=crop&q=80&w=1200",
-    "https://images.unsplash.com/photo-1506318137071-a8e063b497a1?auto=format&fit=crop&q=80&w=800",
-    "https://images.unsplash.com/photo-1494905998402-395d579af36f?auto=format&fit=crop&q=80&w=800",
-    "https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&q=80&w=800",
+    "/images/gallery/2023-09-01.jpg",
+    "/images/gallery/2024-03-02.jpg",
+    "/images/gallery/unnamed.jpg",
+    "/images/gallery/2023-10-19.jpg",
   ];
 
   return (

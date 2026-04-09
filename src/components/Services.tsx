@@ -3,11 +3,11 @@ import { FadeIn } from "./FadeIn";
 
 export const Services = () => {
   const services = [
-    { title: "Diagnostics", img: "https://images.unsplash.com/photo-1542435503-956c469947f6?auto=format&fit=crop&q=80&w=800" },
-    { title: "Engine Repair", img: "https://images.unsplash.com/photo-1506318137071-a8e063b497a1?auto=format&fit=crop&q=80&w=800" },
+    { title: "Diagnostics", img: "/images/gallery/2023-08-31.jpg" },
+    { title: "Engine Repair", img: "/images/gallery/2023-09-01.jpg" },
     { title: "Brake Service", img: "https://images.unsplash.com/photo-1494905998402-395d579af36f?auto=format&fit=crop&q=80&w=800" },
-    { title: "Suspension", img: "https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&q=80&w=800" },
-    { title: "Oil & Maintenance", img: "https://images.unsplash.com/photo-1518131681197-4c4c442478d3?auto=format&fit=crop&q=80&w=800" },
+    { title: "Suspension", img: "/images/gallery/2024-02-29.jpg" },
+    { title: "Oil & Maintenance", img: "/images/gallery/unnamed (1).jpg" },
     { title: "Electrical Repairs", img: "https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&q=80&w=800" },
   ];
 
@@ -18,7 +18,7 @@ export const Services = () => {
           <div className="flex justify-between items-end mb-20">
             <h2 className="text-5xl font-serif">Our Expertise</h2>
             <p className="text-supporting-gray max-w-xs text-right hidden md:block">
-              Specialized care for high-performance and luxury vehicles.
+              Specialized care with authentic parts and real results.
             </p>
           </div>
         </FadeIn>
