@@ -58,8 +58,10 @@ const Navbar = () => {
       transition={{ duration: 1, delay: 0.5 }}
       className="absolute top-0 left-0 w-full z-50 py-12 flex flex-col items-center"
     >
-      <Logo className="h-16 w-auto text-white mb-4" />
-      <div className="text-xl font-serif tracking-[0.3em] text-white">ASTRO AUTOS</div>
+      <div className="flex items-center gap-6 mb-4">
+        <Logo className="h-16 w-auto text-white" />
+        <span className="font-sans text-4xl font-bold tracking-[2px] text-white">ASTRO</span>
+      </div>
     </motion.nav>
   );
 };
@@ -392,8 +394,10 @@ const Footer = () => {
     <footer className="py-24 px-6 bg-white border-t border-warm-stone">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-16">
         <div className="md:col-span-1">
-          <Logo className="h-12 w-auto text-deep-charcoal mb-6" />
-          <div className="text-xl font-serif tracking-widest mb-8">ASTRO AUTOS</div>
+          <div className="flex items-center gap-4 mb-6">
+            <Logo className="h-10 w-auto text-deep-charcoal" />
+            <span className="font-sans text-2xl font-bold tracking-[2px] text-deep-charcoal">ASTRO</span>
+          </div>
           <p className="text-supporting-gray leading-relaxed">
             Premium automotive care for discerning drivers. Built on precision and trust.
           </p>
@@ -402,17 +406,17 @@ const Footer = () => {
         <div>
           <h4 className="font-bold uppercase tracking-widest text-xs mb-8">Location</h4>
           <address className="not-italic text-supporting-gray space-y-2">
-            <p>122 Industrial Way</p>
-            <p>Automotive District</p>
-            <p>London, UK</p>
+          <p>4722 South 13th Street</p>
+          <p>Milwaukee, WI 53221</p>
+          <p>United States</p>
           </address>
         </div>
         
         <div>
           <h4 className="font-bold uppercase tracking-widest text-xs mb-8">Contact</h4>
           <div className="text-supporting-gray space-y-2">
-            <p>+44 (0) 20 7946 0123</p>
-            <p>service@astro-repair.com</p>
+            <p>+1 (414) 319-9400</p>
+            <p>service@milwaukee-astro.com</p>
           </div>
         </div>
         
@@ -427,7 +431,7 @@ const Footer = () => {
       </div>
       
       <div className="max-w-7xl mx-auto mt-24 pt-8 border-t border-warm-stone flex flex-col md:row justify-between items-center gap-4 text-xs text-supporting-gray uppercase tracking-widest">
-        <p>© 2026 ASTRO AUTOS. ALL RIGHTS RESERVED.</p>
+        <p>© 2026 ASTRO. ALL RIGHTS RESERVED.</p>
         <div className="flex gap-8">
           <a href="#" className="hover:text-brand-orange transition-colors">Instagram</a>
           <a href="#" className="hover:text-brand-orange transition-colors">LinkedIn</a>
