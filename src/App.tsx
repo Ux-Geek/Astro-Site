@@ -4,15 +4,15 @@ import { ArrowRight, ChevronRight, Star, Clock, Shield, Wrench, Settings, Zap, C
 
 const FadeIn = ({ children, delay = 0, direction = "up", className = "" }: { children: ReactNode, delay?: number, direction?: "up" | "down" | "left" | "right" | "none", className?: string, key?: string | number }) => {
   const variants = {
-    hidden: { 
-      opacity: 0, 
+    hidden: {
+      opacity: 0,
       y: direction === "up" ? 40 : direction === "down" ? -40 : 0,
       x: direction === "left" ? 40 : direction === "right" ? -40 : 0,
       filter: "blur(10px)"
     },
-    visible: { 
-      opacity: 1, 
-      y: 0, 
+    visible: {
+      opacity: 1,
+      y: 0,
       x: 0,
       filter: "blur(0px)",
       transition: { duration: 0.8, delay, ease: [0.21, 0.47, 0.32, 0.98] }
@@ -33,26 +33,26 @@ const FadeIn = ({ children, delay = 0, direction = "up", className = "" }: { chi
 };
 
 const Logo = ({ className = "h-12 w-auto" }: { className?: string }) => (
-  <svg 
-    width="136" 
-    height="143" 
-    viewBox="0 0 136 143" 
-    fill="none" 
+  <svg
+    width="136"
+    height="143"
+    viewBox="0 0 136 143"
+    fill="none"
     xmlns="http://www.w3.org/2000/svg"
     className={className}
   >
-    <rect x="0.25" y="65.25" width="135.5" height="41.5" rx="11.75" fill="#D9D9D9" stroke="#C6C6C6" strokeWidth="0.5"/>
-    <path d="M43.6211 0.5H88.9121C93.9931 0.500165 98.6439 3.35345 100.946 7.88281L117.213 39.8828C121.778 48.8638 115.253 59.4997 105.179 59.5H29.4883C19.7325 59.5 13.1973 49.4701 17.1387 40.5459L31.2725 8.5459C33.4325 3.65534 38.2748 0.500105 43.6211 0.5Z" fill="#BEBDBD" stroke="#B3B1B1"/>
-    <path d="M31 113.714V130C31 136.627 25.6274 142 19 142C12.3726 142 7 136.627 7 130V116.286V114.571V114C7 112.895 7.89543 112 9 112H29.2857C30.2325 112 31 112.768 31 113.714Z" fill="currentColor"/>
-    <path d="M7 114.571V116.286M7 116.286V130C7 136.627 12.3726 142 19 142C25.6274 142 31 136.627 31 130V113.714C31 112.768 30.2325 112 29.2857 112H9C7.89543 112 7 112.895 7 114V116.286Z" stroke="currentColor" strokeWidth="2"/>
-    <path d="M129 113.714V130C129 136.627 123.627 142 117 142C110.373 142 105 136.627 105 130V116.286V114.571V114C105 112.895 105.895 112 107 112H127.286C128.232 112 129 112.768 129 113.714Z" fill="currentColor"/>
-    <path d="M105 114.571V116.286M105 116.286V130C105 136.627 110.373 142 117 142C123.627 142 129 136.627 129 130V113.714C129 112.768 128.232 112 127.286 112H107C105.895 112 105 112.895 105 114V116.286Z" stroke="currentColor" strokeWidth="2"/>
+    <rect x="0.25" y="65.25" width="135.5" height="41.5" rx="11.75" fill="#D9D9D9" stroke="#C6C6C6" strokeWidth="0.5" />
+    <path d="M43.6211 0.5H88.9121C93.9931 0.500165 98.6439 3.35345 100.946 7.88281L117.213 39.8828C121.778 48.8638 115.253 59.4997 105.179 59.5H29.4883C19.7325 59.5 13.1973 49.4701 17.1387 40.5459L31.2725 8.5459C33.4325 3.65534 38.2748 0.500105 43.6211 0.5Z" fill="#BEBDBD" stroke="#B3B1B1" />
+    <path d="M31 113.714V130C31 136.627 25.6274 142 19 142C12.3726 142 7 136.627 7 130V116.286V114.571V114C7 112.895 7.89543 112 9 112H29.2857C30.2325 112 31 112.768 31 113.714Z" fill="currentColor" />
+    <path d="M7 114.571V116.286M7 116.286V130C7 136.627 12.3726 142 19 142C25.6274 142 31 136.627 31 130V113.714C31 112.768 30.2325 112 29.2857 112H9C7.89543 112 7 112.895 7 114V116.286Z" stroke="currentColor" strokeWidth="2" />
+    <path d="M129 113.714V130C129 136.627 123.627 142 117 142C110.373 142 105 136.627 105 130V116.286V114.571V114C105 112.895 105.895 112 107 112H127.286C128.232 112 129 112.768 129 113.714Z" fill="currentColor" />
+    <path d="M105 114.571V116.286M105 116.286V130C105 136.627 110.373 142 117 142C123.627 142 129 136.627 129 130V113.714C129 112.768 128.232 112 127.286 112H107C105.895 112 105 112.895 105 114V116.286Z" stroke="currentColor" strokeWidth="2" />
   </svg>
 );
 
 const Navbar = () => {
   return (
-    <motion.nav 
+    <motion.nav
       initial={{ y: -20, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 1, delay: 0.5 }}
@@ -79,9 +79,9 @@ const Hero = () => {
   return (
     <section ref={containerRef} className="relative h-screen w-full overflow-hidden flex flex-col items-center justify-end pb-24">
       <motion.div style={{ y }} className="absolute inset-0 z-0">
-        <img 
-          src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&q=80&w=2000" 
-          alt="Premium Workshop" 
+        <img
+          src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&q=80&w=2000"
+          alt="Premium Workshop"
           className="w-full h-full object-cover"
           referrerPolicy="no-referrer"
         />
@@ -90,7 +90,7 @@ const Hero = () => {
 
       <Navbar />
 
-      <motion.div 
+      <motion.div
         style={{ opacity }}
         className="relative z-10 w-full max-w-7xl px-6 flex flex-col items-center text-center"
       >
@@ -110,8 +110,8 @@ const Hero = () => {
                 </a>
               ))}
             </div>
-            <a 
-              href="tel:+14143199400" 
+            <a
+              href="tel:+14143199400"
               className="bg-brand-orange text-white px-8 py-4 rounded-full font-medium hover:bg-brand-orange/90 transition-all hover:scale-105 active:scale-95 shadow-lg shadow-brand-orange/20 border-[0.5px] border-orange-700"
             >
               +1 (414) 319-9400
@@ -166,7 +166,7 @@ const Services = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-16">
           {services.map((service, idx) => (
-            <motion.div 
+            <motion.div
               key={service.title}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -175,10 +175,10 @@ const Services = () => {
               className={`group cursor-pointer ${idx % 2 !== 0 ? "md:mt-12" : ""}`}
             >
               <div className="relative aspect-[4/5] overflow-hidden rounded-sm mb-6">
-                <motion.img 
+                <motion.img
                   whileHover={{ scale: 1.05 }}
                   transition={{ duration: 0.6 }}
-                  src={service.img} 
+                  src={service.img}
                   alt={service.title}
                   className="w-full h-full object-cover"
                   referrerPolicy="no-referrer"
@@ -202,24 +202,24 @@ const FeaturedExperience = () => {
         <div className="relative">
           <FadeIn direction="right">
             <div className="aspect-[4/5] overflow-hidden rounded-sm shadow-2xl">
-              <img 
-                src="https://images.unsplash.com/photo-1507702553912-a15641ec572c?auto=format&fit=crop&q=80&w=1200" 
-                alt="Repair Experience" 
+              <img
+                src="https://images.unsplash.com/photo-1507702553912-a15641ec572c?auto=format&fit=crop&q=80&w=1200"
+                alt="Repair Experience"
                 className="w-full h-full object-cover"
                 referrerPolicy="no-referrer"
               />
             </div>
           </FadeIn>
-          <motion.div 
+          <motion.div
             initial={{ x: 100, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
             viewport={{ once: true }}
             transition={{ delay: 0.5, duration: 1 }}
             className="absolute -bottom-10 -right-10 w-64 h-80 hidden lg:block border-8 border-warm-stone overflow-hidden rounded-sm shadow-xl"
           >
-            <img 
-              src="https://images.unsplash.com/photo-1542282088-fe8426682b8f?auto=format&fit=crop&q=80&w=600" 
-              alt="Detail" 
+            <img
+              src="https://images.unsplash.com/photo-1542282088-fe8426682b8f?auto=format&fit=crop&q=80&w=600"
+              alt="Detail"
               className="w-full h-full object-cover"
               referrerPolicy="no-referrer"
             />
@@ -270,7 +270,7 @@ const Gallery = () => {
         <FadeIn>
           <h2 className="text-5xl font-serif mb-20 text-center">Workshop Showcase</h2>
         </FadeIn>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-12 gap-6 h-[1000px]">
           <div className="md:col-span-8 h-full">
             <FadeIn direction="none" className="h-full">
@@ -309,7 +309,7 @@ const WhyChoose = () => {
         <FadeIn>
           <h2 className="text-5xl font-serif mb-20">Why ASTRO?</h2>
         </FadeIn>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16">
           {reasons.map((reason, idx) => (
             <FadeIn key={reason.title} delay={idx * 0.1}>
@@ -326,22 +326,46 @@ const WhyChoose = () => {
   );
 };
 
+};
+
+const ReviewText = ({ text }: { text: string }) => {
+  const [isExpanded, setIsExpanded] = useState(false);
+  const words = text.split(" ");
+  const isLong = words.length > 35;
+  const displayedText = isExpanded ? text : words.slice(0, 35).join(" ");
+
+  return (
+    <p className="text-lg font-serif italic mb-8 text-deep-charcoal leading-[0px] flex-grow">
+      "{displayedText}
+      {!isExpanded && isLong && (
+        <button 
+          onClick={() => setIsExpanded(true)}
+          className="text-blue-600 hover:text-blue-800 ml-1 inline italic cursor-pointer font-sans"
+        >
+          ....more
+        </button>
+      )}
+      "
+    </p>
+  );
+};
+
 const Reviews = () => {
   const reviews = [
-    { 
-      name: "Aida Ornelas", 
-      role: "Local Guide", 
-      text: "Great price. I was referred to Astro General Repair and Towing after receiving sky-high quotes elsewhere for new tires and an alignment. Not only was the pricing here far more reasonable, but the experience was exceptional from start to finish. Yes, my brother works here—but this review isn’t just about family. The entire team at Astro was incredibly welcoming, professional, and efficient. They treated me with respect, explained everything clearly, and got the job done quickly and correctly. I’m highly satisfied with the quality of work and the customer service I received. I’ll absolutely be recommending Astro to my family, friends, and colleagues. If you're looking for honest, skilled, and friendly automotive service, this is the place to go!" 
+    {
+      name: "Aida Ornelas",
+      role: "Local Guide",
+      text: "I was referred to Astro General Repair and Towing after receiving sky-high quotes elsewhere for new tires and an alignment. Not only was the pricing here far more reasonable, but the experience was exceptional from start to finish. Yes, my brother works here—but this review isn’t just about family. The entire team at Astro was incredibly welcoming, professional, and efficient. They treated me with respect, explained everything clearly, and got the job done quickly and correctly. I’m highly satisfied with the quality of work and the customer service I received. I’ll absolutely be recommending Astro to my family, friends, and colleagues. If you're looking for honest, skilled, and friendly automotive service, this is the place to go!"
     },
-    { 
-      name: "Dylan Siegfried", 
-      role: "Local Guide", 
-      text: "Great price. Astro has fair prices and honest assessment of your issue. I asked them to do an alternator replacement, and before starting work on my car they retested my battery, starter, and alternator, checked the belt and tension, and called me to say that everything on my car looked fine. They let me take my car back with no chargez, and told me what to look out for if the issue arises again. At the local Nissan dealership, they would have charged me $150 just for the diagnostics. I can't recommend Astro enough. Coming back to edit. Its been a week and a 5 hour drive since Astro defied what my own eyes and advanced auto parts were telling me and said my car was fine. It's still fine. They saved me a bunch of money and stress. Good and honest auto mechanics are hard to find, but I found one here. Thanks again Astro team." 
+    {
+      name: "Dylan Siegfried",
+      role: "Local Guide",
+      text: "Astro has fair prices and honest assessment of your issue. I asked them to do an alternator replacement, and before starting work on my car they retested my battery, starter, and alternator, checked the belt and tension, and called me to say that everything on my car looked fine. They let me take my car back with no chargez, and told me what to look out for if the issue arises again. At the local Nissan dealership, they would have charged me $150 just for the diagnostics. I can't recommend Astro enough. Coming back to edit. Its been a week and a 5 hour drive since Astro defied what my own eyes and advanced auto parts were telling me and said my car was fine. It's still fine. They saved me a bunch of money and stress. Good and honest auto mechanics are hard to find, but I found one here. Thanks again Astro team."
     },
-    { 
-      name: "Douglas Copher", 
-      role: "Local Guide", 
-      text: "Great price. My blend door broke, it is used to switch from hot to cold air which is housed within the dashboard. Many of the shops I spoke with would not take it cause it was a labor intensive project. Not only did they find the issue quickly but they also fixed it really quick. They were detailed and anything else they discovered they called to let me know and offered to repair it at part cost. I am glad I discovered this shop and look forward to getting my vehicles serviced with them in the future" 
+    {
+      name: "Douglas Copher",
+      role: "Local Guide",
+      text: "My blend door broke, it is used to switch from hot to cold air which is housed within the dashboard. Many of the shops I spoke with would not take it cause it was a labor intensive project. Not only did they find the issue quickly but they also fixed it really quick. They were detailed and anything else they discovered they called to let me know and offered to repair it at part cost. I am glad I discovered this shop and look forward to getting my vehicles serviced with them in the future"
     },
   ];
 
@@ -351,7 +375,7 @@ const Reviews = () => {
         <FadeIn>
           <h2 className="text-5xl font-serif mb-20 text-center">Client Stories</h2>
         </FadeIn>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {reviews.map((review, idx) => (
             <FadeIn key={review.name} delay={idx * 0.2}>
@@ -359,9 +383,7 @@ const Reviews = () => {
                 <div className="flex gap-1 mb-6">
                   {[...Array(5)].map((_, i) => <Star key={i} className="w-4 h-4 fill-brand-orange text-brand-orange" />)}
                 </div>
-                <p className="text-lg font-serif italic mb-8 text-deep-charcoal leading-relaxed flex-grow">
-                  "{review.text}"
-                </p>
+                <ReviewText text={review.text} />
                 <div className="mt-auto">
                   <div className="font-bold text-deep-charcoal">{review.name}</div>
                   <div className="text-sm text-supporting-gray uppercase tracking-widest">{review.role}</div>
@@ -379,9 +401,9 @@ const BookingCTA = () => {
   return (
     <section className="py-48 px-6 relative overflow-hidden flex flex-col items-center justify-center text-white">
       <div className="absolute inset-0 z-0">
-        <img 
-          src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&q=80&w=2000" 
-          alt="CTA Background" 
+        <img
+          src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&q=80&w=2000"
+          alt="CTA Background"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-black/60" />
@@ -389,8 +411,8 @@ const BookingCTA = () => {
       <div className="max-w-4xl mx-auto text-center relative z-10">
         <FadeIn>
           <h2 className="text-5xl md:text-6xl font-serif mb-12">Expert Care for Your Vehicle</h2>
-          <a 
-            href="tel:+14143199400" 
+          <a
+            href="tel:+14143199400"
             className="inline-block bg-brand-orange text-white px-12 py-6 rounded-full text-2xl font-medium hover:bg-brand-orange/90 transition-all hover:scale-105 active:scale-95 shadow-2xl shadow-brand-orange/40 border-[0.5px] border-orange-700"
           >
             +1 (414) 319-9400
@@ -414,16 +436,16 @@ const Footer = () => {
             Premium automotive care for discerning drivers. Built on precision and trust.
           </p>
         </div>
-        
+
         <div>
           <h4 className="font-bold uppercase tracking-widest text-xs mb-8">Location</h4>
           <address className="not-italic text-supporting-gray space-y-2">
-          <p>4722 South 13th Street</p>
-          <p>Milwaukee, WI 53221</p>
-          <p>United States</p>
+            <p>4722 South 13th Street</p>
+            <p>Milwaukee, WI 53221</p>
+            <p>United States</p>
           </address>
         </div>
-        
+
         <div>
           <h4 className="font-bold uppercase tracking-widest text-xs mb-8">Contact</h4>
           <div className="text-supporting-gray space-y-2">
@@ -431,7 +453,7 @@ const Footer = () => {
             <p>service@milwaukee-astro.com</p>
           </div>
         </div>
-        
+
         <div>
           <h4 className="font-bold uppercase tracking-widest text-xs mb-8">Hours</h4>
           <div className="text-supporting-gray space-y-2">
@@ -441,7 +463,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      
+
       <div className="max-w-7xl mx-auto mt-24 pt-8 border-t border-warm-stone flex flex-col md:row justify-between items-center gap-4 text-xs text-supporting-gray uppercase tracking-widest">
         <p>© 2026 ASTRO. ALL RIGHTS RESERVED.</p>
         <div className="flex gap-8">
