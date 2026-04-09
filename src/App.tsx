@@ -58,8 +58,8 @@ const Navbar = () => {
       transition={{ duration: 1, delay: 0.5 }}
       className="absolute top-0 left-0 w-full z-50 py-12 flex flex-col items-center"
     >
-      <div className="flex items-center gap-6 mb-4">
-        <Logo className="h-16 w-auto text-white" />
+      <div className="flex items-center gap-4 mb-4">
+        <Logo className="h-10 w-auto text-white" />
         <span className="font-sans text-4xl font-bold tracking-[2px] text-white">STRO</span>
       </div>
     </motion.nav>
@@ -326,8 +326,6 @@ const WhyChoose = () => {
   );
 };
 
-};
-
 const ReviewText = ({ text }: { text: string }) => {
   const [isExpanded, setIsExpanded] = useState(false);
   const words = text.split(" ");
@@ -335,7 +333,7 @@ const ReviewText = ({ text }: { text: string }) => {
   const displayedText = isExpanded ? text : words.slice(0, 35).join(" ");
 
   return (
-    <p className="text-lg font-serif italic mb-8 text-deep-charcoal leading-[0px] flex-grow">
+    <p className="text-lg font-serif italic mb-8 text-deep-charcoal leading-relaxed flex-grow">
       "{displayedText}
       {!isExpanded && isLong && (
         <button 
@@ -428,8 +426,8 @@ const Footer = () => {
     <footer className="py-24 px-6 bg-white border-t border-warm-stone">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-16">
         <div className="md:col-span-1">
-          <div className="flex items-center gap-4 mb-6">
-            <Logo className="h-10 w-auto text-deep-charcoal" />
+          <div className="flex items-center gap-3 mb-6">
+            <Logo className="h-6 w-auto text-deep-charcoal" />
             <span className="font-sans text-2xl font-bold tracking-[2px] text-deep-charcoal">STRO</span>
           </div>
           <p className="text-supporting-gray leading-relaxed">
