@@ -5,8 +5,8 @@ export const BookingCTA = () => {
     <section className="py-48 px-6 relative overflow-hidden flex flex-col items-center justify-center text-white">
       <div className="absolute inset-0 z-0">
         <img
-          src="/images/cta-background.jpg"
-          alt="CTA Background"
+          src="/images/workshop-1.jpg"
+          alt="Astro Workshop"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-black/60" />

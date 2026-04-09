@@ -2,8 +2,8 @@ import { FadeIn } from "./FadeIn";
 
 export const Gallery = () => {
   const images = [
+    "/images/workshop-1.jpg",
     "https://images.unsplash.com/photo-1542435503-956c469947f6?auto=format&fit=crop&q=80&w=1200",
-    "https://images.unsplash.com/photo-1518131681197-4c4c442478d3?auto=format&fit=crop&q=80&w=800",
     "https://images.unsplash.com/photo-1506318137071-a8e063b497a1?auto=format&fit=crop&q=80&w=800",
     "https://images.unsplash.com/photo-1494905998402-395d579af36f?auto=format&fit=crop&q=80&w=800",
     "https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&q=80&w=800",
