@@ -5,7 +5,7 @@ export const Footer = () => {
     <footer className="py-24 px-6 bg-white border-t border-warm-stone">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-16">
         <div className="md:col-span-1">
-          <div className="flex items-center gap-3 mb-6">
+          <div className="flex items-center gap-[-2px] mb-6">
             <Logo className="h-[18px] w-auto text-deep-charcoal" />
             <span className="font-sans text-2xl font-bold tracking-[2px] text-deep-charcoal">STRO</span>
           </div>
