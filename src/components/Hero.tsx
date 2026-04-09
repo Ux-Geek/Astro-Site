@@ -2,6 +2,7 @@ import { motion, useScroll, useTransform } from "motion/react";
 import { useRef } from "react";
 import { Navbar } from "./Navbar";
 import { FadeIn } from "./FadeIn";
+import { MobileMenu } from "./mobile/MobileMenu";
 
 export const Hero = () => {
   const containerRef = useRef(null);
@@ -25,6 +26,7 @@ export const Hero = () => {
         <div className="absolute inset-0 bg-black/65" />
       </motion.div>
 
+      <MobileMenu />
       <Navbar />
 
       <motion.div
@@ -38,7 +40,7 @@ export const Hero = () => {
         </FadeIn>
 
         <FadeIn delay={1} direction="none">
-          <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
+          <div className="hidden md:flex flex-col md:flex-row items-center gap-8 md:gap-12">
             <div className="flex gap-8 text-white/70 text-[15px] font-medium tracking-wide">
               {["Services", "About", "Diagnostics", "Gallery", "Reviews", "Contact"].map((item) => (
                 <a key={item} href={`#${item.toLowerCase()}`} className="hover:text-white transition-colors relative group">

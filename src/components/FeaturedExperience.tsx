@@ -25,7 +25,7 @@ export const FeaturedExperience = () => {
             className="absolute -bottom-10 -right-10 w-64 h-80 hidden lg:block border-8 border-warm-stone overflow-hidden rounded-sm shadow-xl"
           >
             <img
-              src="https://images.unsplash.com/photo-1542282088-fe8426682b8f?auto=format&fit=crop&q=80&w=600"
+              src="/images/gallery/unnamed-3.jpg"
               alt="Detail"
               className="w-full h-full object-cover"
               referrerPolicy="no-referrer"
