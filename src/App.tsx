@@ -100,17 +100,20 @@ const Hero = () => {
 
         <FadeIn delay={1} direction="none">
           <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
-            <div className="flex gap-8 text-white/70 text-sm font-medium tracking-widest uppercase">
+            <div className="flex gap-8 text-white/70 text-[15px] font-medium tracking-wide">
               {["Services", "About", "Diagnostics", "Gallery", "Reviews", "Contact"].map((item) => (
                 <a key={item} href={`#${item.toLowerCase()}`} className="hover:text-white transition-colors relative group">
-                  {item}
+                  {item.charAt(0).toUpperCase() + item.slice(1).toLowerCase()}
                   <span className="absolute -bottom-1 left-0 w-0 h-px bg-white transition-all duration-300 group-hover:w-full" />
                 </a>
               ))}
             </div>
-            <button className="bg-brand-orange text-white px-8 py-4 rounded-full font-medium hover:bg-brand-orange/90 transition-all hover:scale-105 active:scale-95 shadow-lg shadow-brand-orange/20">
-              Book Your Service
-            </button>
+            <a 
+              href="tel:+14143199400" 
+              className="bg-brand-orange text-white px-8 py-4 rounded-full font-medium hover:bg-brand-orange/90 transition-all hover:scale-105 active:scale-95 shadow-lg shadow-brand-orange/20 border-[0.5px] border-orange-700"
+            >
+              +1 (414) 319-9400
+            </a>
           </div>
         </FadeIn>
       </motion.div>
@@ -360,14 +363,24 @@ const Reviews = () => {
 
 const BookingCTA = () => {
   return (
-    <section className="py-32 px-6 relative overflow-hidden">
-      <div className="absolute inset-0 bg-brand-orange/5" />
+    <section className="py-48 px-6 relative overflow-hidden flex flex-col items-center justify-center text-white">
+      <div className="absolute inset-0 z-0">
+        <img 
+          src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&q=80&w=2000" 
+          alt="CTA Background" 
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-black/60" />
+      </div>
       <div className="max-w-4xl mx-auto text-center relative z-10">
         <FadeIn>
-          <h2 className="text-5xl md:text-6xl font-serif mb-12">Ready to Get Back on the Road?</h2>
-          <button className="bg-brand-orange text-white px-12 py-6 rounded-full text-xl font-medium hover:bg-brand-orange/90 transition-all hover:scale-105 active:scale-95 shadow-2xl shadow-brand-orange/40">
-            Schedule a Visit
-          </button>
+          <h2 className="text-5xl md:text-6xl font-serif mb-12">Expert Care for Your Vehicle</h2>
+          <a 
+            href="tel:+14143199400" 
+            className="inline-block bg-brand-orange text-white px-12 py-6 rounded-full text-2xl font-medium hover:bg-brand-orange/90 transition-all hover:scale-105 active:scale-95 shadow-2xl shadow-brand-orange/40 border-[0.5px] border-orange-700"
+          >
+            +1 (414) 319-9400
+          </a>
         </FadeIn>
       </div>
     </section>

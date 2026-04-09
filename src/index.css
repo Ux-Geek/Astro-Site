@@ -14,6 +14,7 @@
 @layer base {
   body {
     @apply bg-warm-stone text-deep-charcoal font-sans antialiased selection:bg-brand-orange selection:text-white;
+    letter-spacing: -0.5px;
   }
   
   h1, h2, h3, h4, h5, h6 {
