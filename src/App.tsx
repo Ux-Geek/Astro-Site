@@ -328,9 +328,21 @@ const WhyChoose = () => {
 
 const Reviews = () => {
   const reviews = [
-    { name: "James Wilson", role: "Porsche Owner", text: "Finally, a shop that understands high-end vehicles. The attention to detail at ASTRO is unmatched." },
-    { name: "Sarah Chen", role: "BMW Enthusiast", text: "Transparent, professional, and incredibly skilled. They fixed an electrical issue two other shops couldn't find." },
-    { name: "Michael Ross", role: "Classic Car Collector", text: "I trust ASTRO with my entire collection. They treat every car like it's their own." },
+    { 
+      name: "Aida Ornelas", 
+      role: "Local Guide", 
+      text: "Pricing here is far more reasonable and the experience was exceptional. The entire team was incredibly welcoming, professional, and efficient. If you're looking for honest, skilled, and friendly service, this is the place to go!" 
+    },
+    { 
+      name: "Dylan Siegfried", 
+      role: "Nissan Owner", 
+      text: "Astro has fair prices and honest assessment of your issue. They saved me a bunch of money and stress compared to the local dealership. Good and honest auto mechanics are hard to find, but I found one here." 
+    },
+    { 
+      name: "Douglas Copher", 
+      role: "Automotive Enthusiast", 
+      text: "Many other shops would not take on my labor-intensive repair. Not only did they find the issue quickly, but they also fixed it really fast. I look forward to getting my vehicles serviced here in the future." 
+    },
   ];
 
   return (
