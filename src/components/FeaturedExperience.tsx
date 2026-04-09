@@ -10,7 +10,7 @@ export const FeaturedExperience = () => {
           <FadeIn direction="right">
             <div className="aspect-[4/5] overflow-hidden rounded-sm shadow-2xl">
               <img
-                src="https://images.unsplash.com/photo-1507702553912-a15641ec572c?auto=format&fit=crop&q=80&w=1200"
+                src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&q=80&w=1200"
                 alt="Repair Experience"
                 className="w-full h-full object-cover"
                 referrerPolicy="no-referrer"

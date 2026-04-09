@@ -17,7 +17,7 @@ export const Hero = () => {
     <section ref={containerRef} className="relative h-screen w-full overflow-hidden flex flex-col items-center justify-end pb-24">
       <motion.div style={{ y }} className="absolute inset-0 z-0">
         <img
-          src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&q=80&w=2000"
+          src="https://images.unsplash.com/photo-1613214140508-22187385ef23?auto=format&fit=crop&q=80&w=2000"
           alt="Premium Workshop"
           className="w-full h-full object-cover"
           referrerPolicy="no-referrer"
