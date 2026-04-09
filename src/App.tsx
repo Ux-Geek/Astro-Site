@@ -10,6 +10,7 @@ import {
   BookingCTA, 
   Footer 
 } from "./components";
+import { FloatingCTA } from "./components/mobile/FloatingCTA";
 
 export default function App() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -31,6 +32,7 @@ export default function App() {
       <Reviews />
       <BookingCTA />
       <Footer />
+      <FloatingCTA />
     </main>
   );
 }

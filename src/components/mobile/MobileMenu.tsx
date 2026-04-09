@@ -22,7 +22,7 @@ export const MobileMenu = () => {
             initial={{ opacity: 0, x: 100 }}
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: 100 }}
-            className="fixed inset-0 bg-deep-charcoal text-white flex flex-col items-center justify-center gap-8 z-50"
+            className="fixed inset-0 bg-deep-charcoal text-white flex flex-col items-center pt-32 gap-4 z-50"
           >
             {navItems.map((item, idx) => (
               <motion.a
@@ -32,7 +32,7 @@ export const MobileMenu = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: idx * 0.1 }}
                 onClick={() => setIsOpen(false)}
-                className="text-3xl font-serif hover:text-brand-orange transition-colors"
+                className="text-[12px] uppercase tracking-widest font-normal hover:text-brand-orange transition-colors"
               >
                 {item}
               </motion.a>
