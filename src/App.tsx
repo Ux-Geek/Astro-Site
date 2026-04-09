@@ -60,7 +60,7 @@ const Navbar = () => {
     >
       <div className="flex items-center gap-6 mb-4">
         <Logo className="h-16 w-auto text-white" />
-        <span className="font-sans text-4xl font-bold tracking-[2px] text-white">ASTRO</span>
+        <span className="font-sans text-4xl font-bold tracking-[2px] text-white">STRO</span>
       </div>
     </motion.nav>
   );
@@ -134,7 +134,7 @@ const Intro = () => {
         </FadeIn>
         <FadeIn delay={0.2}>
           <p className="text-lg md:text-xl text-supporting-gray leading-relaxed max-w-2xl mx-auto">
-            From routine maintenance to serious repairs, ASTRO AUTOS delivers high-standard workmanship with modern tools and clear communication.
+            From routine maintenance to serious repairs, ASTRO delivers high-standard workmanship with modern tools and clear communication.
           </p>
         </FadeIn>
       </div>
@@ -307,7 +307,7 @@ const WhyChoose = () => {
     <section className="py-32 px-6 bg-deep-charcoal text-white">
       <div className="max-w-7xl mx-auto">
         <FadeIn>
-          <h2 className="text-5xl font-serif mb-20">Why ASTRO AUTOS?</h2>
+          <h2 className="text-5xl font-serif mb-20">Why ASTRO?</h2>
         </FadeIn>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16">
@@ -328,9 +328,9 @@ const WhyChoose = () => {
 
 const Reviews = () => {
   const reviews = [
-    { name: "James Wilson", role: "Porsche Owner", text: "Finally, a shop that understands high-end vehicles. The attention to detail at ASTRO AUTOS is unmatched." },
+    { name: "James Wilson", role: "Porsche Owner", text: "Finally, a shop that understands high-end vehicles. The attention to detail at ASTRO is unmatched." },
     { name: "Sarah Chen", role: "BMW Enthusiast", text: "Transparent, professional, and incredibly skilled. They fixed an electrical issue two other shops couldn't find." },
-    { name: "Michael Ross", role: "Classic Car Collector", text: "I trust ASTRO AUTOS with my entire collection. They treat every car like it's their own." },
+    { name: "Michael Ross", role: "Classic Car Collector", text: "I trust ASTRO with my entire collection. They treat every car like it's their own." },
   ];
 
   return (
@@ -396,7 +396,7 @@ const Footer = () => {
         <div className="md:col-span-1">
           <div className="flex items-center gap-4 mb-6">
             <Logo className="h-10 w-auto text-deep-charcoal" />
-            <span className="font-sans text-2xl font-bold tracking-[2px] text-deep-charcoal">ASTRO</span>
+            <span className="font-sans text-2xl font-bold tracking-[2px] text-deep-charcoal">STRO</span>
           </div>
           <p className="text-supporting-gray leading-relaxed">
             Premium automotive care for discerning drivers. Built on precision and trust.
