@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Instrument Serif", serif;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  
+  --color-brand-orange: #F27D26;
+  --color-warm-stone: #F5F2ED;
+  --color-deep-charcoal: #1A1A1A;
+  --color-supporting-gray: #878787;
+}
+
+@layer base {
+  body {
+    @apply bg-warm-stone text-deep-charcoal font-sans antialiased selection:bg-brand-orange selection:text-white;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+}
+
+.perspective-1000 {
+  perspective: 1000px;
+}
