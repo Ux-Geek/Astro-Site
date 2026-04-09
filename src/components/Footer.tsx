@@ -6,7 +6,7 @@ export const Footer = () => {
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-16">
         <div className="md:col-span-1">
           <div className="flex items-center mb-6">
-            <Logo className="h-8 w-auto text-deep-charcoal" />
+            <Logo className="h-[27.2px] w-auto text-deep-charcoal" />
           </div>
           <p className="text-supporting-gray leading-relaxed">
             Premium automotive care for discerning drivers. Built on precision and trust.
