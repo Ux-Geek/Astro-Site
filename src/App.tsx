@@ -32,6 +32,24 @@ const FadeIn = ({ children, delay = 0, direction = "up", className = "" }: { chi
   );
 };
 
+const Logo = ({ className = "h-12 w-auto" }: { className?: string }) => (
+  <svg 
+    width="136" 
+    height="143" 
+    viewBox="0 0 136 143" 
+    fill="none" 
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+  >
+    <rect x="0.25" y="65.25" width="135.5" height="41.5" rx="11.75" fill="#D9D9D9" stroke="#C6C6C6" strokeWidth="0.5"/>
+    <path d="M43.6211 0.5H88.9121C93.9931 0.500165 98.6439 3.35345 100.946 7.88281L117.213 39.8828C121.778 48.8638 115.253 59.4997 105.179 59.5H29.4883C19.7325 59.5 13.1973 49.4701 17.1387 40.5459L31.2725 8.5459C33.4325 3.65534 38.2748 0.500105 43.6211 0.5Z" fill="#BEBDBD" stroke="#B3B1B1"/>
+    <path d="M31 113.714V130C31 136.627 25.6274 142 19 142C12.3726 142 7 136.627 7 130V116.286V114.571V114C7 112.895 7.89543 112 9 112H29.2857C30.2325 112 31 112.768 31 113.714Z" fill="currentColor"/>
+    <path d="M7 114.571V116.286M7 116.286V130C7 136.627 12.3726 142 19 142C25.6274 142 31 136.627 31 130V113.714C31 112.768 30.2325 112 29.2857 112H9C7.89543 112 7 112.895 7 114V116.286Z" stroke="currentColor" strokeWidth="2"/>
+    <path d="M129 113.714V130C129 136.627 123.627 142 117 142C110.373 142 105 136.627 105 130V116.286V114.571V114C105 112.895 105.895 112 107 112H127.286C128.232 112 129 112.768 129 113.714Z" fill="currentColor"/>
+    <path d="M105 114.571V116.286M105 116.286V130C105 136.627 110.373 142 117 142C123.627 142 129 136.627 129 130V113.714C129 112.768 128.232 112 127.286 112H107C105.895 112 105 112.895 105 114V116.286Z" stroke="currentColor" strokeWidth="2"/>
+  </svg>
+);
+
 const Navbar = () => {
   return (
     <motion.nav 
@@ -40,7 +58,8 @@ const Navbar = () => {
       transition={{ duration: 1, delay: 0.5 }}
       className="absolute top-0 left-0 w-full z-50 py-12 flex flex-col items-center"
     >
-      <div className="text-4xl font-serif tracking-[0.2em] text-white mb-8">ASTRO AUTOS</div>
+      <Logo className="h-16 w-auto text-white mb-4" />
+      <div className="text-xl font-serif tracking-[0.3em] text-white">ASTRO AUTOS</div>
     </motion.nav>
   );
 };
@@ -360,7 +379,8 @@ const Footer = () => {
     <footer className="py-24 px-6 bg-white border-t border-warm-stone">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-16">
         <div className="md:col-span-1">
-          <div className="text-3xl font-serif tracking-widest mb-8">ASTRO AUTOS</div>
+          <Logo className="h-12 w-auto text-deep-charcoal mb-6" />
+          <div className="text-xl font-serif tracking-widest mb-8">ASTRO AUTOS</div>
           <p className="text-supporting-gray leading-relaxed">
             Premium automotive care for discerning drivers. Built on precision and trust.
           </p>
