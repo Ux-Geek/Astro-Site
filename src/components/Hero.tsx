@@ -19,10 +19,10 @@ export const Hero = () => {
         <img
           src="/images/workshop-1.jpg"
           alt="Premium Workshop"
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover blur-[2px]"
           referrerPolicy="no-referrer"
         />
-        <div className="absolute inset-0 bg-black/45" />
+        <div className="absolute inset-0 bg-black/55" />
       </motion.div>
 
       <Navbar />
