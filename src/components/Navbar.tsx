@@ -10,7 +10,7 @@ export const Navbar = () => {
       className="absolute top-0 left-0 w-full z-50 py-12 flex flex-col items-center"
     >
       <div className="flex items-center gap-4 mb-4">
-        <Logo className="h-9 w-auto text-white" />
+        <Logo className="h-8 w-auto text-white" />
         <span className="font-sans text-4xl font-bold tracking-[2px] text-white">STRO</span>
       </div>
     </motion.nav>
