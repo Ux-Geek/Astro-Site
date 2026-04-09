@@ -22,7 +22,7 @@ export const Hero = () => {
           className="w-full h-full object-cover blur-[2px]"
           referrerPolicy="no-referrer"
         />
-        <div className="absolute inset-0 bg-black/55" />
+        <div className="absolute inset-0 bg-black/65" />
       </motion.div>
 
       <Navbar />
